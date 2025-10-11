@@ -4,6 +4,7 @@
 
 ## Shell
 - [Oh My Zsh](https://ohmyz.sh/#install)
+- [powerlevel10k](https://devocean.sk.com/blog/techBoardDetail.do?ID=165667&boardType=techBlog)
 
 ---
 
