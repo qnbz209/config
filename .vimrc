@@ -1,4 +1,4 @@
-" colorscheme codedark
+" line number
 set nu
 
 " not compatible with 'VI'. (required)
