@@ -22,84 +22,54 @@
     > alias vim=nvim
     > ```
     > `~/.vimrc`
-    > ```bash
-    > " line number
-    > set nu
-    > 
-    > " not compatible with 'VI'. (required)'
+    > ```
     > set nocompatible
-    > 
-    > " Use ; for leader key (default : \\)
-    > let mapleader=";"
-    > 
-    > " Tab space
+    > set number
     > set tabstop=4
-    > 
-    > " Indent space
     > set shiftwidth=4
-    > 
-    > " Tab key space
     > set softtabstop=4
-    > 
-    > " Backspace deletes tab space
-    > set smarttab
-    > 
-    > " Tab -> space
     > set expandtab
-    > 
-    > " C language indent
+    > set smarttab
     > set cindent
-    > 
-    > "highlight search on
     > set hlsearch
-    > 
-    > "incremental search on
     > set incsearch
-    > 
-    > "case sensitivity in search off
     > set nosmartcase
-    > set visualbell
-    > 
-    > " Number of lines before bottom when scrolling vertically
-    > set so=10
-    > 
-    > " backspace can delete anything
     > set backspace=indent,eol,start
+    > set scrolloff=10
     > set wildignore=*.o,*.obj,*.a,*.bak,*.exe,*~
-    > 
-    > " c: Auto-wrap comments,
-    > " r: Auto insert the current comment leader after 'Enter'
-    > " o: Auto insert the current comment leader after 'o' or 'O'
-    > set formatoptions=cro
-    > syn on
-    > 
-    > " coloring on the N'th column
-    > set colorcolumn=80
+    >
+    > let mapleader=";"
+    >
     > set cursorline
-    > 
-    > "___highlight___
-    > " ctermbg=235 -> dark grey
-    > hi CursorLine       term=bold cterm=bold ctermbg=235
-    > 
-    > "___map___
-    > "cure for backspace bug terminal
-    > hi colorcolumn      ctermbg=235
-    > imap ^? ^H
-    > cmap ^? ^H
-    > function! LoadVimFile(so_file)
-    >     if filereadable(a:so_file)
-    >         exe "so ".a:so_file
-    >     endif
-    > endfunction
-    > autocmd BufReadPost *
-    >   \ if line("'\"") > 0 && line("'\"") <= line("$") | exe "normal g`\"" | endif
-    > 
-    > " remap moving split tabs
-    > vnoremap // y/<C-R>"<CR>
+    >
+    > set formatoptions=cro
+    >
     > nnoremap <C-h> <C-w>h
     > nnoremap <C-j> <C-w>j
     > nnoremap <C-k> <C-w>k
     > nnoremap <C-l> <C-w>l
+    > vnoremap // y/<C-R>"<CR>
+    >
+    > autocmd BufReadPost *
+    >   \ if line("'\"") > 0 && line("'\"") <= line("$") |
+    >   \ exe "normal g`\"" |
+    >   \ endif
+    >
+    > hi CursorLine cterm=NONE ctermbg=236 guibg=#323232
+    > hi Visual cterm=NONE ctermbg=24 guibg=#214283
+    > hi Search ctermfg=0 ctermbg=214 guifg=#1e1e2e guibg=#ffcc66
+    > hi IncSearch ctermfg=0 ctermbg=214 guifg=#1e1e2e guibg=#ffcc66
+    > hi Comment ctermfg=59 gui=italic guifg=#808080
+    > hi Constant ctermfg=215 guifg=#ff9e64
+    > hi Identifier ctermfg=75 guifg=#7aa2f7
+    > hi Function ctermfg=75 guifg=#7aa2f7
+    > hi Keyword ctermfg=214 guifg=#ff9e64
+    > hi Type ctermfg=108 guifg=#9ece6a
+    > hi Todo ctermfg=0 ctermbg=214 gui=bold guifg=#1e1e2e guibg=#ffcc66
+    >
+    > set nobackup
+    > set nowritebackup
+    > set undofile
     > ```
     > ` ~/.config/nvim/init.vim`
     > ```bash
