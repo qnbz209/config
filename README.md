@@ -18,7 +18,8 @@
 ---
 
 ## Docker
-- [AWS CLI Docker](https://hub.docker.com/r/amazon/aws-cli)  
+- [AWS CLI Docker](https://hub.docker.com/r/amazon/aws-cli)
+
   - `alias aws="docker run --rm -ti -v ~/.aws:/root/.aws amazon/aws-cli"`
 
 ---
