@@ -41,7 +41,6 @@
     > let mapleader=";"
     >
     > set cursorline
-    >
     > set formatoptions=cro
     >
     > nnoremap <C-h> <C-w>h
@@ -55,21 +54,50 @@
     >   \ exe "normal g`\"" |
     >   \ endif
     >
-    > hi CursorLine cterm=NONE ctermbg=236 guibg=#323232
-    > hi Visual cterm=NONE ctermbg=24 guibg=#214283
-    > hi Search ctermfg=0 ctermbg=214 guifg=#1e1e2e guibg=#ffcc66
-    > hi IncSearch ctermfg=0 ctermbg=214 guifg=#1e1e2e guibg=#ffcc66
-    > hi Comment ctermfg=59 gui=italic guifg=#808080
-    > hi Constant ctermfg=215 guifg=#ff9e64
-    > hi Identifier ctermfg=75 guifg=#7aa2f7
-    > hi Function ctermfg=75 guifg=#7aa2f7
-    > hi Keyword ctermfg=214 guifg=#ff9e64
-    > hi Type ctermfg=108 guifg=#9ece6a
-    > hi Todo ctermfg=0 ctermbg=214 gui=bold guifg=#1e1e2e guibg=#ffcc66
-    >
     > set nobackup
     > set nowritebackup
     > set undofile
+    >
+    > set background=dark
+    > syntax on
+    >
+    > highlight Normal guibg=#1E1E1E guifg=#D0D0D0
+    >
+    > highlight CursorLine guibg=#2B2B2B
+    > highlight Visual guibg=#214283
+    >
+    > highlight LineNr guifg=#5C6370 guibg=#1E1E1E
+    > highlight CursorLineNr guifg=#E8BF6A guibg=#2B2B2B
+    >
+    > highlight Comment guifg=#7F848E cterm=italic
+    > highlight String guifg=#6A8759
+    > highlight Constant guifg=#6897BB
+    > highlight Keyword guifg=#CC7832
+    > highlight Statement guifg=#CC7832
+    > highlight Type guifg=#E8BF6A
+    > highlight Function guifg=#9876AA
+    > highlight Identifier guifg=#9876AA
+    > highlight Number guifg=#6897BB
+    >
+    > highlight Conditional guifg=#CC7832
+    > highlight Repeat guifg=#CC7832
+    > highlight Operator guifg=#CC7832
+    >
+    > highlight MatchParen guifg=#FFFFFF guibg=#3C3F41
+    > highlight Search guibg=#3C3F41 guifg=#E8BF6A
+    > highlight IncSearch guibg=#E8BF6A guifg=#1E1E1E
+    >
+    > highlight StatusLine guibg=#3C3F41 guifg=#D0D0D0
+    > highlight StatusLineNC guibg=#2B2B2B guifg=#7F848E
+    >
+    > highlight VertSplit guibg=#2B2B2B guifg=#3C3F41
+    > highlight TabLine guibg=#2B2B2B guifg=#7F848E
+    > highlight TabLineSel guibg=#3C3F41 guifg=#E8BF6A
+    > highlight TabLineFill guibg=#1E1E1E
+    >
+    > highlight Pmenu guibg=#2B2B2B guifg=#D0D0D0
+    > highlight PmenuSel guibg=#3C3F41 guifg=#E8BF6A
+    > highlight Folded guibg=#2B2B2B guifg=#7F848E
     > ```
     > ` ~/.config/nvim/init.vim`
     > ```bash
