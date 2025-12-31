@@ -119,8 +119,6 @@
   > Some pages aren’t opening in Safari.
 
 - [ChatGPT](https://chatgpt.com/ko-KR/download/)
-- [Notion](https://www.notion.so/)
-- [Notion Calendar](https://calendar.notion.so/)
 - [Slack](https://slack.com/intl/ko-kr/downloads/mac)
 - [iTerm2](https://iterm2.com/)
 - [JetBrains IDEA](https://www.jetbrains.com/idea/)  
